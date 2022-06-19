@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="home1RowModel" type="com.adithyasapplication.app.modules.home.data.model.Home1RowModel"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearGroup"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_100cornerRadius">
+        <ImageView android:id="@+id/imageUnsplashwQLAGv"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_100pxh"
+            android:layout_width="@dimen/_162pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_10pxh}"
+            imageRes="@{@drawable/img_unsplashwqlagv}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_unsplashwqlagv"/>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtLanguage"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_35pxv"
+            android:layout_marginEnd="@dimen/_9pxh"
+            android:layout_marginStart="@dimen/_9pxh"
+            android:layout_marginTop="@dimen/_35pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{home1RowModel.txtLanguage}"
+            style="@style/txtOceanwidesemibold20" tools:text="@string/lbl_find_doctors"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">healthizee1</string>
+    <string name="loading">Loading?</string>
+    <string name="no_internet_connection">No internet connection!</string>
+    <!--TODO ENTER YOUR APP ID BELOW-->
+    <string name="facebook_app_id"/>
+    <!--TODO ENTER YOUR APP ID BELOW (eg: fb0123456789)-->
+    <string name="fb_login_protocol_scheme">fb</string>
+    <!--TODO ENTER YOUR Client Token BELOW-->
+    <string name="facebook_client_token"/>
+<string name="lbl_height">Height</string>
+<string name="lbl_next">Next</string>
+<string name="msg_lets_get_starte">Lets Get Started</string>
+<string name="lbl_search_doctors">Search Doctors</string>
+<string name="lbl_medicines">Medicines</string>
+<string name="lbl2">***********</string>
+<string name="msg_services_offere">Services Offered</string>
+<string name="lbl_home">Home </string>
+<string name="lbl_z">z</string>
+<string name="lbl_100">100</string>
+<string name="msg_lets_get_you_s">Lets  get you started</string>
+<string name="msg_already_have_an">Already have an account?</string>
+<string name="lbl_9080786756">9080786756</string>
+<string name="msg_your_appointmen">Your Appointments</string>
+<string name="lbl_phone_number">Phone Number</string>
+<string name="lbl_app_navigation">App Navigation</string>
+<string name="msg_generate_invoic">Generate Invoice</string>
+<string name="lbl_log_in">Log in</string>
+<string name="lbl_sign_in">Sign In</string>
+<string name="lbl_96">96</string>
+<string name="lbl_dr_vivek">Dr.Vivek</string>
+<string name="lbl_past">Past</string>
+<string name="msg_let_s_get_healt">Let\u2019s get
+Healthy</string>
+<string name="lbl_get_started">Get Started</string>
+<string name="lbl_lab_test">Lab Test</string>
+<string name="lbl_ee">ee</string>
+<string name="lbl_sign_up">Sign Up</string>
+<string name="lbl_splash_screen">Splash Screen</string>
+<string name="lbl_sign_up2">Sign up</string>
+<string name="lbl_dr_ramesh">Dr.Ramesh</string>
+<string name="lbl_sign_up3">Sign Up </string>
+<string name="lbl_name">Name </string>
+<string name="msg_dont_have_an_ac">Dont have an account?</string>
+<string name="lbl_hello">Hello </string>
+<string name="lbl_let_s_get">Let\u2019s get
+</string>
+<string name="lbl">************</string>
+<string name="lbl_to_dr_ramesh">To Dr. Ramesh</string>
+<string name="lbl_find_doctors">Find Doctors </string>
+<string name="lbl_email">Email </string>
+<string name="lbl_payment_failed">Payment Failed</string>
+<string name="lbl_80">80</string>
+<string name="lbl_upcoming">Upcoming</string>
+<string name="lbl_weight">Weight</string>
+<string name="lbl_zozo_ineuron_in">zozo@ineuron.in</string>
+<string name="lbl_appointments">Appointments</string>
+<string name="msg_how_do_you_feel">How do you feel Today?</string>
+<string name="msg_your_healthize">Your 
+Healthizee
+Score</string>
+<string name="lbl_120">120</string>
+<string name="lbl_payments">Payments</string>
+<string name="lbl_healthy">Healthy</string>
+<string name="lbl_ambulance">Ambulance</string>
+<string name="lbl_welcome_back">Welcome Back</string>
+<string name="lbl_9090898978">9090898978</string>
+<string name="msg_check_your_app">"Check your app's UI from the below demo screens of your app."</string>
+<string name="lbl_zee">zee</string>
+<string name="lbl_dr_suresh">Dr. Suresh</string>
+<string name="lbl_password">Password</string>
+<string name="lbl_general_health">General Health</string>
+<string name="msg_payment_sucessf">Payment Sucessfull</string>
+<string name="lbl_to_dr_dinesh">To Dr. Dinesh</string>
+<string name="lbl_healthi">Healthi</string>
+<string name="lbl_blood_pressure">Blood Pressure</string>
+<string name="lbl_196">196</string>
+<string name="lbl_adithya">Adithya</string>
+<string name="msg_please_enter_valid_pa">Please enter valid password</string>
+<string name="msg_please_enter_valid_nu">Please enter valid number</string>
+<string name="msg_please_enter_valid_phone_nu">Please enter valid phone number</string>
+<string name="msg_please_enter_valid_email">Please enter valid email</string>
+<string name="msg_please_enter_valid_text">Please enter valid text</string>
+<string name="msg_please_try_that_again">Please try that again</string>
+</resources>

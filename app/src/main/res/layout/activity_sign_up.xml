@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="signUpVM" type="com.adithyasapplication.app.modules.signup.data.viewmodel.SignUpVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearSignUp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearFrame33"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_88pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearFrame34"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtSignUp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{signUpVM.signUpModel.txtSignUp}"
+                    style="@style/txtOceanwidesemibold32" tools:text="@string/lbl_sign_up"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtLanguage"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{signUpVM.signUpModel.txtLanguage}"
+                    style="@style/txtIntersemibold16" tools:text="@string/msg_lets_get_you_s"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearFrame32"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_48pxv"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearFrame29"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="vertical">
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearFrame22"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent" android:orientation="vertical">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtLanguage1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{signUpVM.signUpModel.txtLanguage1}"
+                            style="@style/txtIntermedium16" tools:text="@string/lbl_name"/>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/textInputLayFrame16"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_12pxv"
+                            android:layout_width="match_parent" style="@style/txtRoundedOutline">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:ellipsize="end"
+                                android:id="@+id/etFrame16"
+                                android:inputType="text"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:singleLine="true" android:text="@={signUpVM.signUpModel.etFrame16Value}"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearFrame23"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_22pxv"
+                        android:layout_width="match_parent" android:orientation="vertical">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtLanguage2"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{signUpVM.signUpModel.txtLanguage2}"
+                            style="@style/txtIntermedium16" tools:text="@string/lbl_email"/>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:hint="@string/lbl_zozo_ineuron_in"
+                            android:id="@+id/textInputLayFrame18"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_12pxv"
+                            android:layout_width="match_parent"
+                            android:textColorHint="@color/black_900" style="@style/txtSolidRoundedOutline">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:ellipsize="end"
+                                android:id="@+id/etFrame18"
+                                android:inputType="textEmailAddress"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:singleLine="true"
+                                android:text="@={signUpVM.signUpModel.etFrame18Value}"
+                                android:textColor="@color/black_900" android:textSize="@dimen/_8pxh"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearFrame24"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_22pxv"
+                        android:layout_width="match_parent" android:orientation="vertical">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtPhoneNumber"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{signUpVM.signUpModel.txtPhoneNumber}"
+                            style="@style/txtIntermedium16" tools:text="@string/lbl_phone_number"/>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:hint="@string/lbl_9080786756"
+                            android:id="@+id/textInputLayFrame20"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_12pxv"
+                            android:layout_width="match_parent"
+                            android:textColorHint="@color/black_900" style="@style/txtSolidRoundedOutline">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:ellipsize="end"
+                                android:id="@+id/etFrame20"
+                                android:inputType="phone"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:singleLine="true"
+                                android:text="@={signUpVM.signUpModel.etFrame20Value}"
+                                android:textColor="@color/black_900" android:textSize="@dimen/_8pxh"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearFrame25"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_22pxv"
+                        android:layout_width="match_parent" android:orientation="vertical">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtPassword"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{signUpVM.signUpModel.txtPassword}"
+                            style="@style/txtIntermedium16" tools:text="@string/lbl_password"/>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:hint="@string/lbl"
+                            android:id="@+id/textInputLayFrame21"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_12pxv"
+                            android:layout_width="match_parent"
+                            android:textColorHint="@color/black_900" style="@style/txtSolidRoundedOutline">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:ellipsize="end"
+                                android:id="@+id/etFrame21"
+                                android:inputType="textPassword"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:singleLine="true"
+                                android:text="@={signUpVM.signUpModel.etFrame21Value}"
+                                android:textColor="@color/black_900" android:textSize="@dimen/_8pxh"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearFrame27"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_1pxh"
+                    android:layout_marginStart="@dimen/_2pxh"
+                    android:layout_marginTop="@dimen/_20pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <View android:background="@color/bluegray_100"
+                        android:id="@+id/lineLine6"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_weight="0.25" android:layout_width="0dp"/>
+                    <View android:background="@color/bluegray_100"
+                        android:id="@+id/lineLine7"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginStart="@dimen/_9pxh"
+                        android:layout_weight="0.25" android:layout_width="0dp"/>
+                    <View android:background="@color/bluegray_100"
+                        android:id="@+id/lineLine8"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_weight="0.27" android:layout_width="0dp"/>
+                    <View android:background="@color/bluegray_100"
+                        android:id="@+id/lineLine9"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_weight="0.23" android:layout_width="0dp"/>
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnSignUp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_16pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_16pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_sign_up2"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded_1" tools:text="@string/lbl_sign_up2"/>
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/linearFrame30"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20pxv"
+                    android:layout_width="match_parent" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/txtConfirmation"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{signUpVM.signUpModel.txtConfirmation}"
+                        style="@style/txtIntersemibold16_1" tools:text="@string/msg_already_have_an"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnLogIn"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_16pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_16pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_log_in"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRoundedOutline" tools:text="@string/lbl_log_in"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
