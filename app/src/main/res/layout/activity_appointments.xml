@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="appointmentsVM" type="com.adithyasapplication.app.modules.appointments.data.viewmodel.AppointmentsVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearAppointments"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleorange_50">
+        <androidx.appcompat.widget.Toolbar android:gravity="start"
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_58pxv"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:id="@+id/linearGroup33"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/_32pxh"
+                android:layout_marginStart="@dimen/_32pxh"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:gravity="end"
+                    android:id="@+id/linearGroup32"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <LinearLayout android:id="@+id/linearGroup31"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <LinearLayout android:gravity="start"
+                            android:id="@+id/linearGroup1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_26pxv"
+                            android:layout_weight="0.3"
+                            android:layout_width="0dp" android:orientation="vertical">
+                            <View android:background="@color/black_900"
+                                android:id="@+id/lineLine10"
+                                android:layout_height="@dimen/_3pxv" android:layout_width="@dimen/_32pxh"/>
+                            <View android:background="@color/black_900"
+                                android:id="@+id/lineLine11"
+                                android:layout_height="@dimen/_3pxv"
+                                android:layout_marginEnd="@dimen/_5pxh"
+                                android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_27pxh"/>
+                            <View android:background="@color/black_900"
+                                android:id="@+id/lineLine12"
+                                android:layout_height="@dimen/_3pxv"
+                                android:layout_marginEnd="@dimen/_10pxh"
+                                android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_22pxh"/>
+                        </LinearLayout>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtLanguage"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_2pxv"
+                            android:layout_marginEnd="@dimen/_22pxh"
+                            android:layout_marginStart="@dimen/_105pxh"
+                            android:layout_weight="0.7"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{appointmentsVM.appointmentsModel.txtLanguage}"
+                            style="@style/txtOceanwidesemibold32" tools:text="@string/lbl_hello"/>
+                    </LinearLayout>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtAdithya"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appointmentsVM.appointmentsModel.txtAdithya}"
+                        style="@style/txtOceanwidesemibold32_1" tools:text="@string/lbl_adithya"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/imageEllipse2"
+                    android:layout_height="@dimen/_59pxh"
+                    android:layout_marginBottom="@dimen/_23pxv"
+                    android:layout_marginStart="@dimen/_56pxh"
+                    android:layout_width="@dimen/_59pxh"
+                    android:scaleType="fitXY" circular="@{true}"
+                    imageRes="@{@drawable/img_ellipse2_1}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse2_1"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearFrame42"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_77pxv"
+            android:layout_width="wrap_content" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtYourAppointmen"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_64pxh"
+                android:layout_marginStart="@dimen/_64pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{appointmentsVM.appointmentsModel.txtYourAppointmen}"
+                style="@style/txtOceanwidesemibold24" tools:text="@string/msg_your_appointmen"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearGroup35"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_34pxv"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtUpcoming"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{appointmentsVM.appointmentsModel.txtUpcoming}"
+                    style="@style/txtInterregular24" tools:text="@string/lbl_upcoming"/>
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/linearFrame12"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3pxh"
+                    android:layout_marginTop="@dimen/_20pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStyle">
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearGroup34"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/_181pxh"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStylegray_100cornerRadius">
+                        <ImageView android:gravity="start"
+                            android:id="@+id/imageUnsplashwQLAGv"
+                            android:layout_height="@dimen/_100pxv"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            cornerRadius="@{@dimen/_10pxh}"
+                            imageRes="@{@drawable/img_unsplashwqlagv_2}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_unsplashwqlagv_2"/>
+                        <TextView android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/txtSubtitle2"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_35pxv"
+                            android:layout_marginEnd="@dimen/_9pxh"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_35pxv"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{appointmentsVM.appointmentsModel.txtSubtitle2}"
+                            style="@style/txtOceanwidesemibold20" tools:text="@string/lbl_dr_suresh"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearGroup38"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_34pxv"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtPast"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{appointmentsVM.appointmentsModel.txtPast}"
+                    style="@style/txtInterregular24" tools:text="@string/lbl_past"/>
+                <LinearLayout android:id="@+id/linearFrame13"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3pxh"
+                    android:layout_marginTop="@dimen/_20pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStyle">
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearGroup36"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:orientation="vertical" style="@style/groupStylegray_100cornerRadius">
+                        <ImageView android:gravity="start"
+                            android:id="@+id/imageUnsplashwQLAGv1"
+                            android:layout_height="@dimen/_100pxh"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            cornerRadius="@{@dimen/_10pxh}"
+                            imageRes="@{@drawable/img_unsplashwqlagv_3}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_unsplashwqlagv_3"/>
+                        <TextView android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/txtWeburl"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_35pxv"
+                            android:layout_marginEnd="@dimen/_9pxh"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_35pxv"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{appointmentsVM.appointmentsModel.txtWeburl}"
+                            style="@style/txtOceanwidesemibold20" tools:text="@string/lbl_dr_ramesh"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearGroup37"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_19pxh"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:orientation="vertical" style="@style/groupStylegray_100cornerRadius">
+                        <ImageView android:gravity="start"
+                            android:id="@+id/imageUnsplashbU8TeX"
+                            android:layout_height="@dimen/_100pxh"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            cornerRadius="@{@dimen/_10pxh}"
+                            imageRes="@{@drawable/img_unsplashbu8tex_2}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_unsplashbu8tex_2"/>
+                        <TextView android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/txtWeburl1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_35pxv"
+                            android:layout_marginEnd="@dimen/_9pxh"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_35pxv"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{appointmentsVM.appointmentsModel.txtWeburl1}"
+                            style="@style/txtOceanwidesemibold20" tools:text="@string/lbl_dr_vivek"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/imageFrame37"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_63pxh"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_63pxv"
+            android:layout_width="@dimen/_310pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_frame37}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_frame37"/>
+    </LinearLayout>
+</layout>

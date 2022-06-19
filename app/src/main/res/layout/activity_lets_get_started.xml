@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="letsGetStartedVM" type="com.adithyasapplication.app.modules.letsgetstarted.data.viewmodel.LetsGetStartedVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearLetsGetStarte"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearGroup24"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <FrameLayout android:gravity="start"
+                android:id="@+id/frameGroup27"
+                android:layout_height="@dimen/_540pxv" android:layout_width="match_parent">
+                <View
+                    android:background="@drawable/rectangle_bg_deep_orange_100_radius_204_5"
+                    android:id="@+id/viewEllipse1"
+                    android:layout_gravity="top|end"
+                    android:layout_height="@dimen/_409pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginStart="@dimen/_10pxh" android:layout_width="@dimen/_242pxh"/>
+                <ImageView android:id="@+id/imageBaymaximagere"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="@dimen/_507pxh"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="@dimen/_286pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_baymaximagere}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_baymaximagere"/>
+            </FrameLayout>
+            <TextView android:id="@+id/txtLetsgetHealt"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_44pxh"
+                android:layout_marginStart="@dimen/_44pxh"
+                android:layout_marginTop="@dimen/_54pxv"
+                android:layout_width="wrap_content"
+                android:text="@{letsGetStartedVM.letsGetStartedModel.txtLetsgetHealt}"
+                style="@style/txtOceanwidesemibold48" tools:text="@string/msg_let_s_get_healt"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnGetStarted"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_80pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_32pxv"
+                android:layout_width="@dimen/_318pxh"
+                android:paddingBottom="@dimen/_25pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_25pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_get_started"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded" tools:text="@string/lbl_get_started"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

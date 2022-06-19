@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="generalHealthVM" type="com.adithyasapplication.app.modules.generalhealth.data.viewmodel.GeneralHealthVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearGeneralHealth"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleorange_50">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearGroup74" android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_58pxv"
+            android:layout_weight="1.0"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar android:gravity="start"
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:id="@+id/linearGroup75"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/_32pxh"
+                    android:layout_marginStart="@dimen/_32pxh"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <LinearLayout android:gravity="end"
+                        android:id="@+id/linearGroup71"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:layout_width="0dp" android:orientation="vertical">
+                        <LinearLayout android:id="@+id/linearGroup70"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <LinearLayout android:gravity="start"
+                                android:id="@+id/linearGroup1"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_26pxv"
+                                android:layout_weight="0.3"
+                                android:layout_width="0dp" android:orientation="vertical">
+                                <View
+                                    android:background="@color/black_900"
+                                    android:id="@+id/lineLine10"
+                                    android:layout_height="@dimen/_3pxv" android:layout_width="@dimen/_32pxh"/>
+                                <View
+                                    android:background="@color/black_900"
+                                    android:id="@+id/lineLine11"
+                                    android:layout_height="@dimen/_3pxv"
+                                    android:layout_marginEnd="@dimen/_5pxh"
+                                    android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_27pxh"/>
+                                <View
+                                    android:background="@color/black_900"
+                                    android:id="@+id/lineLine12"
+                                    android:layout_height="@dimen/_3pxv"
+                                    android:layout_marginEnd="@dimen/_10pxh"
+                                    android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_22pxh"/>
+                            </LinearLayout>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtLanguage"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_2pxv"
+                                android:layout_marginEnd="@dimen/_22pxh"
+                                android:layout_marginStart="@dimen/_105pxh"
+                                android:layout_weight="0.7"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{generalHealthVM.generalHealthModel.txtLanguage}"
+                                style="@style/txtOceanwidesemibold32" tools:text="@string/lbl_hello"/>
+                        </LinearLayout>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtAdithya"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{generalHealthVM.generalHealthModel.txtAdithya}"
+                            style="@style/txtOceanwidesemibold32_1" tools:text="@string/lbl_adithya"/>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/imageEllipse2"
+                        android:layout_height="@dimen/_59pxh"
+                        android:layout_marginBottom="@dimen/_23pxv"
+                        android:layout_marginStart="@dimen/_56pxh"
+                        android:layout_width="@dimen/_59pxh"
+                        android:scaleType="fitXY" circular="@{true}"
+                        imageRes="@{@drawable/img_ellipse2_3}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse2_3"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtPayments"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_13pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{generalHealthVM.generalHealthModel.txtPayments}"
+                style="@style/txtOceanwidesemibold24" tools:text="@string/lbl_payments"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:gravity="center_horizontal"
+                android:id="@+id/recyclerGeneralHealth"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_44pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_19pxh}" tools:itemCount="3" tools:listitem="@layout/row_general_health1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearFrame39"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_width="wrap_content" android:orientation="vertical">
+            <LinearLayout android:id="@+id/linearGroup9"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imagePepiconshouse"
+                    android:layout_height="@dimen/_30pxh"
+                    android:layout_marginBottom="@dimen/_7pxv"
+                    android:layout_marginTop="@dimen/_26pxv"
+                    android:layout_width="@dimen/_33pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_pepiconshouse_1" tools:ignore="ContentDescription"/>
+                <ImageView android:id="@+id/imageFoundationclip"
+                    android:layout_height="@dimen/_35pxh"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:layout_marginStart="@dimen/_48pxh"
+                    android:layout_marginTop="@dimen/_25pxv"
+                    android:layout_width="@dimen/_35pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_foundationclip_1" tools:ignore="ContentDescription"/>
+                <ImageView android:id="@+id/imageIcoutlineheal"
+                    android:layout_height="@dimen/_35pxh"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:layout_marginStart="@dimen/_48pxh"
+                    android:layout_marginTop="@dimen/_25pxv"
+                    android:layout_width="@dimen/_35pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_icoutlineheal" tools:ignore="ContentDescription"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/floatingBtnFloatingactionbutton"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_48pxh"
+                    android:layout_weight="0.38"
+                    android:layout_width="0dp" app:srcCompat="@drawable/img_group8"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

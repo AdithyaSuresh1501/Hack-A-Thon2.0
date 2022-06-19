@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="splashScreenVM" type="com.adithyasapplication.app.modules.splashscreen.data.viewmodel.SplashScreenVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearSplashScreen"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylewhite_A700">
+        <TextView android:ellipsize="end" android:id="@+id/txtHealthi"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_418pxv"
+            android:layout_marginStart="@dimen/_87pxh"
+            android:layout_marginTop="@dimen/_418pxv"
+            android:layout_weight="0.66" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{splashScreenVM.splashScreenModel.txtHealthi}"
+            style="@style/txtOceanwidesemibold48" tools:text="@string/lbl_healthi"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtZee"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_405pxv"
+            android:layout_marginEnd="@dimen/_74pxh"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_398pxv"
+            android:layout_weight="0.34" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{splashScreenVM.splashScreenModel.txtZee}"
+            style="@style/txtCclassicPersonalUse48" tools:text="@string/lbl_zee"/>
+    </LinearLayout>
+</layout>
